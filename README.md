@@ -1,9 +1,21 @@
-# 📒 ContactBook
+#  ContactBook
 
 A full-stack Contact Book application built with **ASP.NET Core 8**, **MongoDB**, and vanilla **HTML/CSS/JavaScript**. Supports full CRUD operations via a RESTful API.
+
 ---
 
-## 🏗️ Tech Stack
+##  Screenshots
+
+> Add screenshots after running the app and name them `screenshots/main.png` and `screenshots/form.png`.
+
+| Main Page (All Contacts) | Add / Edit Contact | View / Operations |
+|---|---|---|
+| ![Main Page](screenshots/1.png) | ![Add Page](screenshots/2.png) | ![Edit Page](screenshots/3.png) |
+| ![Search](screenshots/4.png) | ![Filter](screenshots/5.png) | ![Favorites](screenshots/6.png) |
+
+---
+
+##  Tech Stack
 
 | Layer | Technology |
 |---|---|
@@ -14,7 +26,7 @@ A full-stack Contact Book application built with **ASP.NET Core 8**, **MongoDB**
 
 ---
 
-## ✅ Features
+## Features
 
 - **GET** — Fetch and display all contacts from MongoDB
 - **POST** — Add a new contact with form validation
@@ -31,7 +43,83 @@ A full-stack Contact Book application built with **ASP.NET Core 8**, **MongoDB**
 
 ---
 
+##  Setup Instructions
 
+### Prerequisites
+
+Make sure you have installed:
+
+1. [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
+2. [MongoDB Community Server](https://www.mongodb.com/try/download/community) (local) **or** a [MongoDB Atlas](https://www.mongodb.com/atlas) free cluster
+
+---
+
+### 1. Clone the Repository
+
+```bash
+git clone https://github.com/YOUR_USERNAME/ContactBook.git
+cd ContactBook
+```
+
+---
+
+### 2. Configure MongoDB Connection
+
+Open `ContactBook.API/appsettings.json` and update the connection string:
+
+**Option A — Local MongoDB (default):**
+```json
+{
+  "MongoDbSettings": {
+    "ConnectionString": "mongodb://localhost:27017",
+    "DatabaseName": "ContactBookDB",
+    "ContactsCollectionName": "Contacts"
+  }
+}
+```
+
+
+---
+
+### 3. Start MongoDB (if running locally)
+
+**Windows:**
+```bash
+net start MongoDB
+`
+```
+
+---
+
+### 4. Restore & Run the Backend
+
+```bash
+cd ContactBook.API
+dotnet restore
+dotnet run
+```
+
+The API will start at **`https://localhost:5001`** (or `http://localhost:5000`).
+
+---
+
+### 5. Open the Frontend
+
+Since the frontend is served as static files from the ASP.NET Core project, simply open your browser:
+
+```
+https://localhost:5001
+```
+
+- **Main Page:** `https://localhost:5001/index.html` — View all contacts
+- **Add Contact:** `https://localhost:5001/form.html` — Add a new contact
+- **Edit Contact:** `https://localhost:5001/form.html?id=<contactId>` — Edit existing
+- **API Docs:** `https://localhost:5001/swagger` — Interactive Swagger UI
+
+> ⚠️ If your browser warns about the self-signed SSL cert in development, click "Advanced → Proceed".  
+> You can also run with `dotnet run --urls http://localhost:5000` to use HTTP only.
+
+---
 
 ## 📁 Project Structure
 
@@ -87,7 +175,7 @@ All responses follow the format:
 
 ---
 
-## 🛠️ Development Notes
+##  Development Notes
 
 - The database and collection are created automatically on first run.
 - An email uniqueness index is created automatically.
@@ -96,9 +184,9 @@ All responses follow the format:
 
 ---
 
-## 👤 Author
+##  Author
 
-**Syeda Mehrunisa **  
+**Syeda Mehrunnisa **  
 Roll No: 2502133
 Course: Web technologies
-Instructor:   Mam Warda
+Instructor:Mam Warda
