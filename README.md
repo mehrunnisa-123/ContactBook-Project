@@ -1,17 +1,6 @@
 # 📒 ContactBook
 
 A full-stack Contact Book application built with **ASP.NET Core 8**, **MongoDB**, and vanilla **HTML/CSS/JavaScript**. Supports full CRUD operations via a RESTful API.
-
----
-
-## 📸 Screenshots
-
-> Add screenshots after running the app and name them `screenshots/main.png` and `screenshots/form.png`.
-
-| Main Page (All Contacts) | Add / Edit Contact |
-|---|---|
-| ![Main Page](screenshots/main.png) | ![Form Page](screenshots/form.png) |
-
 ---
 
 ## 🏗️ Tech Stack
@@ -42,100 +31,7 @@ A full-stack Contact Book application built with **ASP.NET Core 8**, **MongoDB**
 
 ---
 
-## 🚀 Setup Instructions
 
-### Prerequisites
-
-Make sure you have installed:
-
-1. [.NET 8 SDK](https://dotnet.microsoft.com/en-us/download/dotnet/8.0)
-2. [MongoDB Community Server](https://www.mongodb.com/try/download/community) (local) **or** a [MongoDB Atlas](https://www.mongodb.com/atlas) free cluster
-
----
-
-### 1. Clone the Repository
-
-```bash
-git clone https://github.com/YOUR_USERNAME/ContactBook.git
-cd ContactBook
-```
-
----
-
-### 2. Configure MongoDB Connection
-
-Open `ContactBook.API/appsettings.json` and update the connection string:
-
-**Option A — Local MongoDB (default):**
-```json
-{
-  "MongoDbSettings": {
-    "ConnectionString": "mongodb://localhost:27017",
-    "DatabaseName": "ContactBookDB",
-    "ContactsCollectionName": "Contacts"
-  }
-}
-```
-
-**Option B — MongoDB Atlas (cloud):**
-```json
-{
-  "MongoDbSettings": {
-    "ConnectionString": "mongodb+srv://<username>:<password>@cluster0.xxxxx.mongodb.net/?retryWrites=true&w=majority",
-    "DatabaseName": "ContactBookDB",
-    "ContactsCollectionName": "Contacts"
-  }
-}
-```
-> Replace `<username>` and `<password>` with your Atlas credentials.
-
----
-
-### 3. Start MongoDB (if running locally)
-
-**Windows:**
-```bash
-net start MongoDB
-```
-
-**macOS / Linux:**
-```bash
-brew services start mongodb-community
-# or
-sudo systemctl start mongod
-```
-
----
-
-### 4. Restore & Run the Backend
-
-```bash
-cd ContactBook.API
-dotnet restore
-dotnet run
-```
-
-The API will start at **`https://localhost:5001`** (or `http://localhost:5000`).
-
----
-
-### 5. Open the Frontend
-
-Since the frontend is served as static files from the ASP.NET Core project, simply open your browser:
-
-```
-https://localhost:5001
-```
-
-- **Main Page:** `https://localhost:5000/index.html` — View all contacts
-- **Add Contact:** `https://localhost:5000/form.html` — Add a new contact
-- **Edit Contact:** `https://localhost:5000/form.html?id=<contactId>` — Edit existing
-- **API Docs:** `https://localhost:5000/swagger` — Interactive Swagger UI
-
-> ⚠️ If your browser warns about the self-signed SSL cert in development, click "Advanced → Proceed".  
-> You can also run with `dotnet run --urls http://localhost:5000` to use HTTP only.
-
----
 
 ## 📁 Project Structure
 
@@ -202,7 +98,7 @@ All responses follow the format:
 
 ## 👤 Author
 
-**Your Name**  
-Roll No: XXXX  
-Course: Web Engineering / Full Stack Development  
-Instructor: [Instructor Name]
+**Syeda Mehrunisa **  
+Roll No: 2502133
+Course: Web technologies
+Instructor:   Mam Warda
