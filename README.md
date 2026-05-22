@@ -6,8 +6,6 @@ A full-stack Contact Book application built with **ASP.NET Core 8**, **MongoDB**
 
 ##  Screenshots
 
-> Add screenshots after running the app and name them `screenshots/main.png` and `screenshots/form.png`.
-
 | Main Page (All Contacts) | Add / Edit Contact | View / Operations |
 |---|---|---|
 | ![Main Page](screenshots/1.png) | ![Add Page](screenshots/2.png) | ![Edit Page](screenshots/3.png) |
