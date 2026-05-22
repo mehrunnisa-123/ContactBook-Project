@@ -8,8 +8,8 @@ A full-stack Contact Book application built with **ASP.NET Core 8**, **MongoDB**
 
 | Main Page (All Contacts) | Add / Edit Contact | View / Operations |
 |---|---|---|
-| ![Main Page](1.png) | ![Add Page](2.png) | ![Edit Page](3.png) |
-| ![Search](4.png) | ![Filter](5.png) | ![Favorites](6.png) |
+| ![Main Page](1.png) | ![Add Page](2.png) | ![Details Page](3.png) |
+| ![Search](4.png) | ![Delete](7.png) | ![edit](6.png) |
 
 ---
 
